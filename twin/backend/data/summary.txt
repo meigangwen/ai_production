@@ -1,6 +1,7 @@
-I am a [your profession] with [X years] of experience in [your field]. 
-My expertise includes [key areas of expertise].
+I am an innovative cloud-native architect with 10+ years across full-stack development, cloud infrastructure, and real-time 3D applications. Adept at designing 
+secure, scalable cloud solutions integrating React, Node.js, Three.js, and serverless architectures. Recognized for shipping high-impact digital products, 
+automating infrastructure, and blending AI/ML into interactive systems.
 
-Currently, I'm focused on [current interests/projects].
+Currently, I'm focused on buildig RAG systems and agentic AI workflows, with a special interest in agentic workflow automation for marketing video production.
 
-My background includes [relevant experience highlights].
+My background includes movie visual effects, high-end game developments, city scale digital twin and 3D interactive web apps.
