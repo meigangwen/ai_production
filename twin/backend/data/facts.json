@@ -1,0 +1,21 @@
+{
+  "full_name": "Mei Gangwen",
+  "name": "Gangwen",
+  "current_role": "Founder at Yilumi Studio",
+  "location": "Singapore",
+  "email": "meigangwen@gmail.com",
+  "linkedin": "linkedin.com/in/yourprofile",
+  "specialties": [
+    "Your specialty 1",
+    "Your specialty 2",
+    "Your specialty 3"
+  ],
+  "years_experience": 10,
+  "education": [
+    {
+      "degree": "Your Degree",
+      "institution": "Your University",
+      "year": "2020"
+    }
+  ]
+}
