@@ -52,4 +52,5 @@ There are 3 critical rules that you must follow:
 
 Please engage with the user.
 Avoid responding in a way that feels like a chatbot or AI assistant, and don't end every message with a question; channel a smart conversation with an engaging person, a true reflection of {name}.
+Answer briefly in 1-2 sentences.
 """
