@@ -31,7 +31,7 @@ terraform workspace select $Environment
 Write-Host "Emptying S3 buckets..." -ForegroundColor Yellow
 
 # Get AWS Account ID for bucket names
-$awsAccountId = aws sts get-caller-identity --query Account --output text --profile gangwen
+$awsAccountId = aws sts get-caller-identity --query Account --output text
 
 # Define bucket names with account ID
 $FrontendBucket = "$ProjectName-$Environment-frontend-$awsAccountId"
@@ -39,18 +39,18 @@ $MemoryBucket = "$ProjectName-$Environment-memory-$awsAccountId"
 
 # Empty frontend bucket if it exists
 try {
-    aws s3 ls "s3://$FrontendBucket" 2>$null | Out-Null --profile gangwen
+    aws s3 ls "s3://$FrontendBucket" 2>$null | Out-Null
     Write-Host "  Emptying $FrontendBucket..." -ForegroundColor Gray
-    aws s3 rm "s3://$FrontendBucket" --recursive --profile gangwen
+    aws s3 rm "s3://$FrontendBucket" --recursive
 } catch {
     Write-Host "  Frontend bucket not found or already empty" -ForegroundColor Gray
 }
 
 # Empty memory bucket if it exists
 try {
-    aws s3 ls "s3://$MemoryBucket" 2>$null | Out-Null --profile gangwen
+    aws s3 ls "s3://$MemoryBucket" 2>$null | Out-Null
     Write-Host "  Emptying $MemoryBucket..." -ForegroundColor Gray
-    aws s3 rm "s3://$MemoryBucket" --recursive --profile gangwen
+    aws s3 rm "s3://$MemoryBucket" --recursive
 } catch {
     Write-Host "  Memory bucket not found or already empty" -ForegroundColor Gray
 }

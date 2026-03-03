@@ -10,10 +10,8 @@ terraform {
 }
 
 provider "aws" {
-  profile = "chaoying"
 }
 provider "aws" {
   alias = "us-east-1"
   region = "us-east-1"
-  profile = "chaoying"
 }
