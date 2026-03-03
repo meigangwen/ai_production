@@ -42,7 +42,7 @@ Write-Host "Setting API URL for production..." -ForegroundColor Yellow
 
 npm install
 npm run build
-aws s3 sync .\out "s3://$FrontendBucket/" --delete
+aws s3 sync .\out "s3://$FrontendBucket/" --delete --profile gangwen
 Set-Location ..
 
 # 4. Final summary
