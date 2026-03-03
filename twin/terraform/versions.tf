@@ -10,10 +10,10 @@ terraform {
 }
 
 provider "aws" {
-  profile = "gangwen"
+  profile = "chaoying"
 }
 provider "aws" {
-  alias = "us_east_1"
+  alias = "us-east-1"
   region = "us-east-1"
-  profile = "gangwen"
+  profile = "chaoying"
 }
